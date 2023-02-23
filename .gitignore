@@ -1,7 +1,7 @@
-/.bsp/
+.bsp/
 target/
 /project/target/
 /js/target/
 /jvm/target/
-/.metals/
-/.vscode/
+.metals/
+.vscode/

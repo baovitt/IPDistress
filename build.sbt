@@ -22,14 +22,16 @@ lazy val ipdistress = crossProject(JSPlatform, JVMPlatform).in(file("."))
       com.softwaremill.sttp.client3.`armeria-backend-cats`,
       com.softwaremill.sttp.client3.fs2,
       com.github.`xuwei-k`.`optparse-applicative`,
-      "org.typelevel" %% "cats-collections-core" % "0.9.5"
+      "org.typelevel" %% "cats-collections-core" % "0.9.5",
+      "net.i2p.client" % "streaming" % "2.1.0"
     )
   )
   .jsSettings(
     libraryDependencies ++= Seq(
       "be.doeraene" %%% "web-components-ui5" % "1.9.0",
       "com.raquo" %%% "laminar" % "0.14.5",
-      "org.scala-js" %%% "scalajs-dom" % "2.1.0"
+      "org.scala-js" %%% "scalajs-dom" % "2.1.0",
+      "io.frontroute" %%% "frontroute" % "0.16.1"
     ),
     npmDependencies in Compile ++= Seq(
       "@ui5/webcomponents" -> "1.9.1",

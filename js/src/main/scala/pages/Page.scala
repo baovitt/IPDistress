@@ -2,7 +2,7 @@ package baovitt.ipdistress.js.pages
 
 import com.raquo.laminar.api.L.HtmlElement
 
-abstract class Page (title: String, description: String):
+abstract class Page protected (title: String, description: String):
     private def copy: Unit = ()
     
     lazy val render: HtmlElement
